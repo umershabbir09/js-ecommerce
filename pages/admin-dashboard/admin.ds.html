@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.ds.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Larkon</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li id="addProductBtn">Add Products</li>
+                <li id="manageProductsBtn">Manage Products</li>
+            </ul>
+        </aside>
+        <main>
+            <section id="addProductSection">
+                <h2>Add Product</h2>
+                <input type="file" id="productImage" accept="image/*">
+                <input type="text" id="productName" placeholder="Product Name">
+                <textarea id="productDescription" placeholder="Product Description"></textarea>
+                <input type="number" id="productPrice" placeholder="Price">
+                <input type="text" id="productCategory" placeholder="Category">
+                <button id="saveProduct">Add Product</button>
+            </section>
+            <section id="manageProductsSection" style="display: none;">
+                <h2>Manage Products</h2>
+                <div class="filters">
+                    <input type="text" id="searchProduct" placeholder="Search products...">
+                    <select id="filterCategory">
+                        <option value="All">All Categories</option>
+                    </select>
+                    <select id="sortPrice">
+                        <option value="default">Sort by Default</option>
+                        <option value="lowToHigh">Price: Low to High</option>
+                        <option value="highToLow">Price: High to Low</option>
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productList"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="admin.ds.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.ds.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2> <a class="navbar-brand" href="../index.html"><img src="../images/Group.png" alt="Logo"></a></h2>
+            <ul>
+                <li id="dashboardBtn">Dashboard</li>
+                <li id="addProductBtn">Add Products</li>
+                <li id="manageProductsBtn">Manage Products</li>
+            </ul>
+        </aside>
+        <main>
+            <section id="dashboardSection">
+                <h2>Dashboard</h2>
+                <p>Welcome to the admin dashboard. Here you can manage products and view analytics.</p>
+            </section>
+            <section id="addProductSection" style="display: none;">
+                <h2>Add Product</h2>
+                <input type="file" id="productImage" accept="image/*">
+                <input type="text" id="productName" placeholder="Product Name">
+                <textarea id="productDescription" placeholder="Product Description"></textarea>
+                <input type="number" id="productPrice" placeholder="Price">
+                <input type="text" id="productCategory" placeholder="Category">
+                <button id="saveProduct">Add Product</button>
+            </section>
+            <section id="manageProductsSection" style="display: none;">
+                <h2>Manage Products</h2>
+                <div class="filters">
+                    <input type="text" id="searchProduct" placeholder="Search products...">
+                    <select id="filterCategory">
+                        <option value="All">All Categories</option>
+                    </select>
+                    <select id="sortPrice">
+                        <option value="default">Sort by Default</option>
+                        <option value="lowToHigh">Price: Low to High</option>
+                        <option value="highToLow">Price: High to Low</option>
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productList"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="admin.ds.js"></script>
+</body>
+</html>

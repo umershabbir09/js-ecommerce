@@ -1,0 +1,50 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#navbar-center{
+    max-width: 1350px;
+    margin: 0px auto;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    align-items: center;
+    padding: 10px 0px;
+    /* margin: 0px auto 0px auto; */
+}
+
+.navbar-nav a{
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover{
+    color: #000;
+}
+
+.dropdown{
+    position: relative;
+    padding: 5px 10px;
+    background: #2CBEBE;
+    border-radius: 20px;
+}
+
+#navbarDropdownMenuLink{
+    color: white;
+}
+
+.dropdown-item{
+    color: #333;
+}
+
+#userauserAccountSection {
+    background: #000;
+    color: #fff;
+}

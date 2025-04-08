@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+
+    <nav id="navbar-center" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Left-aligned logo -->
+          <a class="navbar-brand" href="../index.html"><img src="../images/Group.png" alt="Logo"></a>
+    
+          <!-- Navbar toggler for small screens -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Right-aligned content (Home, Products, Contact Us) and user account section -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../productpage/producct.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Contact US pages/contact.html">Contact Us</a>
+              </li>
+              <li id="userAccountSection" class="nav-item dropdown">
+                <!-- Dynamically populated by JavaScript -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+    <div class="product-detail">
+        <div id="product-image">
+            <img style="width: 100%;" id="productImage" src="" alt="Product Image">
+        </div>
+        <div id="product-content">
+            <h2 id="productName"></h2>
+            <p id="productDescription"></p>
+            <p id="productPrice"></p>
+            <p id="productCategory"></p>
+        </div>
+    </div>
+
+    
+  <footer>
+    <p>&copy; 2023 Your  Awam Shop. All rights reserved.</p>
+  </footer>
+    <script src="detail.js"></script>
+</body>
+</html>

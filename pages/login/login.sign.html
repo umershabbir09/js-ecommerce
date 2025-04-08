@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-sign.css">
+    <title>login/signup</title>
+</head>
+<body>
+    
+      <!-- login / sign up buttons -->
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+
+          <!-- login form -->
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field" id="email_border">
+                <input id="email_requrid" type="text" placeholder="Email Address" >
+              </div>
+              <div class="field" id="password_border">
+                <input id="password_requrid" type="password" placeholder="Password" >
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input onclick=" login()" type="submit" value="Login" id="login_ka_btn">
+              </div>
+              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+              <div id="sugestion_text">not a valid id</div>
+            </form>
+
+            <!-- singn up form -->
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" id="email_signup" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" id="password_signup" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm password" id="conf_pass_signup" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input onclick="" id="sinupbtn" type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>  
+
+      <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   -->
+    <script src="login-sign.js"></script>
+</body>
+</html>
